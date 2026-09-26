@@ -1,0 +1,22 @@
+.wraper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.wraper .input-form {
+  flex: 1;
+}
+.field-error {
+  margin: 6px 0 0;
+  color: #d93025;
+  font-size: 13px;
+
+}
+
+@media (max-width: 600px) {
+  .wraper {
+    flex-direction: column;
+    gap: 0;
+  }
+}

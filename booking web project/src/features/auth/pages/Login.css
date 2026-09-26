@@ -1,0 +1,60 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-button {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 10px 0px;
+
+    border-radius: 5px;
+    border: none;
+    background-color: #0c4aa2;
+    color: white;
+
+    cursor: pointer;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+a {
+    text-decoration: none;
+    color: #0c4aa2;
+}
+
+
+.register{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+    h2,p{
+        text-align: center;
+    }
+    
+    .container {
+        
+        flex-direction: column;
+        width: 90%;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .login-image {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+    }
+
+    .login-form {
+        width: 100%;
+        max-width: 350px;
+    }
+}

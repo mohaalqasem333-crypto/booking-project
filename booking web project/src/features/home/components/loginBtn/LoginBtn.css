@@ -1,0 +1,53 @@
+
+.singin-register-button {
+  min-width: 136px;
+
+  padding: 10px 20px;
+
+  border: 1px solid #0c4aa2;
+  border-radius: 6px;
+
+  background-color: transparent;
+  color: #0c4aa2;
+
+  font: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:0.5s;
+}
+
+.singin-register-button:hover {
+  background-color: #0c4aa2;
+  color: #fff;
+scale: calc(1.1);
+}
+
+.singin-register-button:focus-visible {
+  outline: 3px solid rgba(12, 74, 162, 0.25);
+  outline-offset: 2px;
+}
+
+
+
+
+@media (max-width: 720px) {
+
+
+  .singin-register-button {
+    min-width: auto;
+
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .singin-register-button {
+    padding: 8px 10px;
+
+    font-size: 13px;
+  }
+}

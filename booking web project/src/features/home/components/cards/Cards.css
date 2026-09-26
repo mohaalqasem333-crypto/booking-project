@@ -1,0 +1,126 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    padding: 5px;
+    width: auto;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.card-image {
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* Details */
+.card-detiles {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 15px;
+}
+
+/* Title */
+.card-detiles .title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Side / Location */
+.card-detiles p:nth-child(2) {
+    margin: 0;
+    font-size: 13px;
+    color: #777;
+}
+
+/* Date */
+.card-detiles .Date {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Description */
+.card-detiles .discription {
+    margin: 5px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #666;
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card-image {
+        height: 160px;
+    }
+
+    .card-detiles {
+        padding: 12px;
+        gap: 6px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    .card-detiles {
+        padding: 12px;
+    }
+
+}

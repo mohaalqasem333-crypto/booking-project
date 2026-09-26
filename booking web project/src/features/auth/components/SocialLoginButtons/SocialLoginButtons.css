@@ -1,0 +1,29 @@
+.social-logo{
+    width: 30px;
+}
+.social-accounts{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+
+.social-account {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-account:hover {
+    background-color: #f5f5f5;
+    border-color: #9ca3af;
+}

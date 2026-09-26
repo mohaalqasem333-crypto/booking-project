@@ -1,0 +1,170 @@
+.Box-Icons-Your-Account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-account {
+  position: relative;
+  margin-left: 20px;
+}
+
+.user-account-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.user-account-trigger::-webkit-details-marker {
+  display: none;
+}
+
+.account-name {
+  display: flex;
+  flex-direction: column;
+  color: #07689f;
+}
+
+.user-name {
+  color: #043e5f;
+  font-weight: bold;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #0873a8;
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.profile-menu {
+  position: absolute;
+  z-index: 20;
+
+  top: calc(100% + 14px);
+  right: 0;
+
+  width: 280px;
+  padding: 18px 19px 12px;
+
+  border: 1px solid #dedede;
+  border-radius: 7px;
+
+  background: #fafafa;
+  color: #111;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.profile-menu-header {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  min-height: 82px;
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #d8d8d8;
+
+  color: #555;
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+.profile-menu-avatar {
+  flex: 0 0 78px;
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+
+  background: #e8e8e8;
+
+  color: #0873a8;
+
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.profile-menu-items {
+  padding-top: 19px;
+}
+
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 51px;
+  padding: 0 7px;
+
+  border-bottom: 1px solid #d8d8d8;
+
+  font-size: 16px;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.profile-menu-item > span {
+  flex: 1;
+}
+
+.profile-menu-item > i:first-child {
+  width: 16px;
+}
+
+.profile-menu-item > i:last-child {
+  font-size: 13px;
+}
+
+.profile-menu-item.active {
+  min-height: 33px;
+  margin-bottom: 8px;
+}
+
+.profile-menu-item.sign-out {
+  margin-top: 13px;
+  color: #0873b1;
+}
+
+.profile-menu-item:hover {
+  background-color: #0873a8;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .user-account {
+    margin-left: 8px;
+  }
+
+  .account-name {
+    display: none;
+  }
+
+  .profile-menu {
+    width: min(280px, calc(100vw - 24px));
+  }
+}
