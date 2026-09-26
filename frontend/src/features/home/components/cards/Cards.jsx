@@ -25,7 +25,7 @@ function Cards() {
         <div className="card" key={property._id}>
           <div className="card-image">
             <img
-              src={`http://localhost:5000${property.images[0]}`}
+              src={`https://booking-backend-xl8q.onrender.com${property.images[0]}`}
               alt={property.name}
             />
           </div>
@@ -35,13 +35,9 @@ function Cards() {
 
             <p className="side">{property.location}</p>
 
-            <p className="Date">
-              ${property.price} / night
-            </p>
+            <p className="Date">${property.price} / night</p>
 
-            <p className="discription">
-              {property.description}
-            </p>
+            <p className="discription">{property.description}</p>
           </div>
         </div>
       ))}
