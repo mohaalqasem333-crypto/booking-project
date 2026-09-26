@@ -1,7 +1,7 @@
 import React from 'react'
 import facebookLogo from "../../../../assets/icons/facebookLogo.png";
 import googleLogo from "../../../../assets/icons/googleLogo.png";
-import appleBlackLogo from "../../../../assets/icons/Applelogo.png";
+import appleBlackLogo from "../../../../assets/icons/appleLogo.png";
 import "./SocialLoginButtons.css";
 function SocialLoginButtons() {
   return (
